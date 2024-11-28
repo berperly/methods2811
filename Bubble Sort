@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+
+  int array[] = {
+    76,
+    42,
+    9,
+    91,
+    1
+  };
+  int numero = 5;
+  int temp;
+
+  for (int i = 0; i < numero - 1; i++) {
+
+    for (int j = 0; j < numero - i - 1; j++) {
+
+      if (array[j] > array[j + 1]) {
+
+        temp = array[j];
+        array[j] = array[j + 1];
+        array[j + 1] = temp;
+      }
+    }
+  }
+
+  for (int i = 0; i < numero; i++) {
+    printf("%d ", array[i]);
+  }
+
+  return 0;
+}
