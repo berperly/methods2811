@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+  int array[] = {
+    76,
+    42,
+    9,
+    91,
+    1
+  };
+  int numero = 5;
+  int i, j, key;
+
+  for (i = 1; i < numero; i++) {
+    key = array[i];
+    j = i - 1;
+
+    while (j >= 0 && array[j] > key) {
+      array[j + 1] = array[j];
+      j--;
+    }
+
+    array[j + 1] = key;
+  }
+
+  for (i = 0; i < numero; i++) {
+    printf("%d ", array[i]);
+  }
+
+  return 0;
+}
