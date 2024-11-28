@@ -1,6 +1,6 @@
 # ATIVIDADE SOBRE MÉTODOS DE ORDENAÇÃO
 <br>
-<p>Como solicitado pelo professor, segue abaixo o README sobre métodos de ordenação. </p>
+<p>Como solicitado pelo professor, segue o README sobre métodos de ordenação. </p>
 <br>
 <p>Os métodos selecionados foram:</p>
 <ul>
